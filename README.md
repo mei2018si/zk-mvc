@@ -245,7 +245,7 @@ public class CalculadoraController extends SelectorComposer<Window> {
 	}
 }
 ```
-Descarga: [CalculadoraController.java](https://github.com/mei2018si/zk-mvc/src/main/java/es/uvigo/mei/ejemplozk/CalculadoraController.java)
+Descarga: [CalculadoraController.java](https://github.com/mei2018si/zk-mvc/raw/master/src/main/java/es/uvigo/mei/ejemplozk/CalculadoraController.java)
 
 ### Crear clases complementarias
 ```
@@ -259,7 +259,8 @@ public enum TipoOperacion {
 	SUMA, RESTA, MULTIPLICACION, DIVISION
 }
 ```
-Descarga: [TipoOperacion.java](https://github.com/mei2018si/zk-mvc/src/main/java/es/uvigo/mei/ejemplozk/TipoOperacion.java)
+Descarga: [TipoOperacion.java](https://github.com/mei2018si/zk-mvc/raw/master/src/main/java/es/uvigo/mei/ejemplozk/TipoOperacion.java)
+
 
 
 ```
@@ -348,7 +349,7 @@ public class Operacion {
 }
 ```
 
-Descarga: [Operacion.java](https://github.com/mei2018si/zk-mvc/src/main/java/es/uvigo/mei/ejemplozk/Operacion.java)
+Descarga: [Operacion.java](https://github.com/mei2018si/zk-mvc/raw/master/src/main/java/es/uvigo/mei/ejemplozk/Operacion.java)
 
 
 ### Compilar y ejecutar el proyecto con maven
