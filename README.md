@@ -155,19 +155,6 @@ public class CalculadoraController extends SelectorComposer<Window> {
 	@Wire
 	private Listbox operacionesListbox;
 
-	@Wire
-	private Button sumarButton;
-	@Wire
-	private Button restarButton;
-	@Wire
-	private Button multiplicarButton;
-	@Wire
-	private Button dividirButton;
-
-	@Wire
-	private Button eliminarButton;
-	@Wire
-	private Button eliminarTodasButton;
 
 	private ListModelList<Operacion> operaciones;
 	private int contadorOperaciones;
