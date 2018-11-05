@@ -1,0 +1,60 @@
+<zk>
+	<window title="Calculadora ZK MVC" border="normal" width="800px"
+		apply="es.uvigo.mei.ejemplozk.CalculadoraController">
+		<vbox>
+			<hbox>
+				Operando 1:
+				<textbox id="operando1Text" constraint="no empty" />
+			</hbox>
+			<hbox>
+				Operando 2:
+				<textbox id="operando2Text" constraint="no empty" />
+			</hbox>
+			<hbox>
+				Resultado:
+				<label id="resultadoLabel" />
+			</hbox>
+		</vbox>
+
+		<separator height="10px" />
+
+		<hbox>
+			<button id="sumarButton" label="Sumar" />
+			<button id="restarButton" label="Restar" />
+			<button id="multiplicarButton" label="Multiplicar" />
+			<button id="dividirButton" label="Dividir" />
+		</hbox>
+
+		<separator height="10px" />
+
+		Historial de operaciones
+
+		<listbox id="operacionesListbox"
+			emptyMessage="No hay operaciones que mostrar">
+			<listhead>
+				<listheader label="Id" />
+				<listheader label="Tipo" />
+				<listheader label="Operando 1" />
+				<listheader label="Operando 2" />
+				<listheader label="Resultado" />
+			</listhead>
+			<template name="model" >
+				<listitem>
+					<listcell label="${each.id}"></listcell>
+					<listcell label="${each.tipo}"></listcell>
+					<listcell label="${each.operando1}"></listcell>
+					<listcell label="${each.operando2}"></listcell>
+					<listcell label="${each.resultado}"></listcell>
+				</listitem>
+			</template>
+		</listbox>
+
+		<separator height="10px" />
+	
+		<hbox>
+			<button id="eliminarButton" label="Eliminar Seleccionada" />
+			<button id="eliminarTodasButton" label="Eliminar Todas" />
+		</hbox>
+	</window>
+</zk>
+
